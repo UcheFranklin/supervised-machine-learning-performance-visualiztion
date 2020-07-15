@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Final Year Project | Uchechukwu</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css" />
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet" />
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../tables/datasets.html" class="nav-link">Datasets</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="../../index.html" class="brand-link">
+        <span class="brand-text font-weight-light">Final Year Project</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="info">
+            <a href="#" class="d-block">Uchechukwu Ekpendu</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+              <a href="../../index.html" class="nav-link">
+                <i class="nav-icon fas fa-italic"></i>
+                <p>
+                  Introduction
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-project-diagram"></i>
+                <p>
+                  Algorithm Evalution
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../tables/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Random Forest</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/simple1.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Logistic Regression</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/simple2.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Support Vector Machine</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/simple3.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>K-Nearest Neighbour</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/simple4.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Naive Bayes</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/simple5.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Decision Tree</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/simple6.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Neural Networks</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../charts/chartjs.html" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Accuracy Comparison
+                </p>
+              </a>
+            </li>
+            <li class="nav-header">Extras</li>
+            <li class="nav-item">
+              <a href="../tables/datasets.html" class="nav-link">
+                <i class="nav-icon fas fa-database"></i>
+                <p>
+                  Datasets
+                </p>
+              </a>
+            </li>
+
+          </ul>
+          </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Naive Bayes</h1>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="card">
+
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      <i class="fas fa-level-up-alt"></i>
+                      Performance Results
+                    </h3>
+                    <div class="card-tools">
+                      <ul class="nav nav-pills ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#table-card" data-toggle="tab">Hepatitis Dataset</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#table-card-two" data-toggle="tab">HCC Dataset</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="tab-content p-0">
+                      <!-- Morris chart - Sales -->
+                      <div class="card chart tab-pane active" id="table-card"
+                        style="position: relative; height: 350px;">
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Performance Metric</th>
+                                <th>Visualization Bar</th>
+                                <th style="width: 40px">Result</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Recall (TP Rate)</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 86%"></div>
+                                  </div>
+                                </td>
+                                <td>0.859</td>
+                              </tr>
+                              <tr>
+                                <td>Fall-out (FP Rate)</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 27%"></div>
+                                  </div>
+                                </td>
+                                <td>0.270</td>
+                              </tr>
+                              <tr>
+                                <td>Precision</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 87%"></div>
+                                  </div>
+                                </td>
+                                <td>0.868</td>
+                              </tr>
+                              <tr>
+                                <td>F1 score/measure</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 86%"></div>
+                                  </div>
+                                </td>
+                                <td>0.863</td>
+                              </tr>
+                              <tr>
+                                <td>MCC</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 56%"></div>
+                                  </div>
+                                </td>
+                                <td>0.558</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+
+
+                      <div class="card chart tab-pane" id="table-card-two" style="position: relative; height: 350px;">
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Performance Metric</th>
+                                <th>Visualization Bar</th>
+                                <th style="width: 40px">Result</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Recall (TP Rate)</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 67%"></div>
+                                  </div>
+                                </td>
+                                <td>0.667</td>
+                              </tr>
+                              <tr>
+                                <td>Fall-out (FP Rate)</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 42%"></div>
+                                  </div>
+                                </td>
+                                <td>0.424</td>
+                              </tr>
+                              <tr>
+                                <td>Precision</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 66%"></div>
+                                  </div>
+                                </td>
+                                <td>0.655</td>
+                              </tr>
+                              <tr>
+                                <td>F1 score/measure</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 65%"></div>
+                                  </div>
+                                </td>
+                                <td>0.653</td>
+                              </tr>
+                              <tr>
+                                <td>MCC</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 26%"></div>
+                                  </div>
+                                </td>
+                                <td>0.263</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                    </div>
+                  </div><!-- /.card-body -->
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+
+            <!-- /.card -->
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="card">
+
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      <i class="fas fa-level-up-alt"></i>
+                      Accuracy Evaluation
+                    </h3>
+                    <div class="card-tools">
+                      <ul class="nav nav-pills ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#table-card-three" data-toggle="tab">Hepatitis Dataset</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#table-card-four" data-toggle="tab">HCC Dataset</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="tab-content p-0">
+                      <!-- Morris chart - Sales -->
+                      <div class="card chart tab-pane active" id="table-card-three"
+                        style="position: relative; height: 350px;">
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                          <table class="table table-hover text-nowrap">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Correctly Classified intances</th>
+                                <th>Incorrectly Classified intances</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Instance Number</th>
+                                <td>122</td>
+                                <td>20</td>
+                              </tr>
+                              <tr>
+                                <th>Decimal</th>
+                                <td>0.859</td>
+                                <td>0.141</td>
+                              </tr>
+                              <tr>
+                                <th>Pecentage</th>
+                                <td>85.9155</td>
+                                <td>14.0845</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+
+
+                      <div class="card chart tab-pane" id="table-card-four" style="position: relative; height: 350px;">
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                          <table class="table table-hover text-nowrap">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Correctly Classified intances</th>
+                                <th>Incorrectly Classified intances</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>Instance Number</th>
+                                <td>110</td>
+                                <td>55</td>
+                              </tr>
+                              <tr>
+                                <th>Decimal</th>
+                                <td>0.667</td>
+                                <td>0.333</td>
+                              </tr>
+                              <tr>
+                                <th>Pecentage</th>
+                                <td>66.6667</td>
+                                <td>33.3333</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                    </div>
+                  </div><!-- /.card-body -->
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+
+            <!-- /.card -->
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="card">
+
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      <i class="fas fa-level-up-alt"></i>
+                      Confusion Matrix
+                    </h3>
+                    <div class="card-tools">
+                      <ul class="nav nav-pills ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#table-card-five" data-toggle="tab">Hepatitis Dataset</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#table-card-six" data-toggle="tab">HCC Dataset</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="tab-content p-0">
+                      <!-- Morris chart - Sales -->
+                      <div class="card chart tab-pane active" id="table-card-five"
+                        style="position: relative; height: 350px;">
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                          <table class="table table-hover text-nowrap">
+                            <thead>
+                              <tr>
+                                <th>a</th>
+                                <th>b</th>
+                                <th>Classified as:</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>104</td>
+                                <td>12</td>
+                                <th>a= LIVE</th>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>18</td>
+                                <th>b= DIE</th>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+
+
+                      <div class="card chart tab-pane" id="table-card-six" style="position: relative; height: 350px;">
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                          <table class="table table-hover text-nowrap">
+                            <thead>
+                              <tr>
+                                <th>a</th>
+                                <th>b</th>
+                                <th>Classified as:</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>83</td>
+                                <td>19</td>
+                                <th>a= LIVE</th>
+                              </tr>
+                              <tr>
+                                <td>36</td>
+                                <td>27</td>
+                                <th>b= DIE</th>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                    </div>
+                  </div><!-- /.card-body -->
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>Copyright &copy; 2020 Redeemer's University</strong>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+</body>
+
+</html>
